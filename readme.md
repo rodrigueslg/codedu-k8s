@@ -1,5 +1,5 @@
 # apply all
-kubectl apply -f .
+`kubectl apply -f .`
 
 # cluster creation
 kind delete cluster --name fullcycle &&
