@@ -6,14 +6,14 @@
 `kind create cluster --name fullcycle --config=config/kind.yaml`
 
 # deployment
-`kubectl apply -f ./configmap-env.yaml`  
-`kubectl apply -f ./configmap-family.yaml`  
-`kubectl apply -f ./secret.yaml`  
-`kubectl apply -f ./deployment.yaml`  
-`kubectl apply -f ./service.yaml`  
-`kubectl apply -f ./metrics-server.yaml`  
-`kubectl apply -f ./hpa.yaml`  
-`kubectl apply -f ./pvc.yaml`
+`kubectl apply -f ./config/map-env.yaml`  
+`kubectl apply -f ./config/map-family.yaml`  
+`kubectl apply -f ./config/secret.yaml`  
+`kubectl apply -f ./config/deployment.yaml`  
+`kubectl apply -f ./config/service.yaml`  
+`kubectl apply -f ./config/metrics-server.yaml`  
+`kubectl apply -f ./config/hpa.yaml`  
+`kubectl apply -f ./config/pvc.yaml`
 
 # port redirect
 `kubectl port-forward svc/goserver-service 9000:80`
