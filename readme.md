@@ -3,7 +3,7 @@
 
 # cluster creation
 `kind delete cluster --name fullcycle`  
-`kind create cluster --name fullcycle --config ./kind.yaml`
+`kind create cluster --name fullcycle --config=config/kind.yaml`
 
 # deployment
 `kubectl apply -f ./configmap-env.yaml`  
